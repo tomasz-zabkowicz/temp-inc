@@ -11,4 +11,11 @@
 
     <artifactId>temperature-analytics-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.kontak.apps</groupId>
+            <artifactId>anomaly-storage</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,10 +1,10 @@
 package io.kontak.apps.temperature.generator;
 
-import io.kontak.apps.event.TemperatureReading;
+import io.kontak.apps.event.TemperatureReadingRecord;
 
 import java.util.List;
 
 public interface TemperatureGenerator {
 
-    List<TemperatureReading> generate();
+    List<TemperatureReadingRecord> generate();
 }
