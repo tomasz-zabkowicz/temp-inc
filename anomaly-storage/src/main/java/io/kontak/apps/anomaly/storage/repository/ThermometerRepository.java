@@ -12,5 +12,5 @@ import java.util.UUID;
 public interface ThermometerRepository extends JpaRepository<Thermometer, UUID> {
 
     @Query("select t from Thermometer t where (select count(a) from Anomaly a where a.thermometer.id = t.id) >= :anomaliesThreshold")
-    List<Thermometer> findByAnomaliesThreshold(int anomaliesThreshold);
+    List<Thermometer> findByAnomaliesThreshold(long anomaliesThreshold);
 }

@@ -21,7 +21,7 @@ public class ThermometerController {
     }
 
     @GetMapping(params = {"anomaliesThreshold"})
-    public List<Thermometer> getByRoom(@RequestParam("anomaliesThreshold") Integer anomaliesThreshold)
+    public List<Thermometer> getByRoom(@RequestParam("anomaliesThreshold") Long anomaliesThreshold)
     {
         return thermometerService.findByAnomaliesThreshold(anomaliesThreshold);
     }

@@ -16,7 +16,7 @@ public class ThermometerService {
         this.thermometerRepository = thermometerRepository;
     }
 
-    public List<Thermometer> findByAnomaliesThreshold(int anomaliesThreshold)
+    public List<Thermometer> findByAnomaliesThreshold(long anomaliesThreshold)
     {
         return thermometerRepository.findByAnomaliesThreshold(anomaliesThreshold);
     }
